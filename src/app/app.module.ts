@@ -12,6 +12,7 @@ import { PocketMoneyPage } from '../pages/pocket-money/pocket-money';
 import { SettingPage } from '../pages/setting/setting';
 import { TicketScrathPage } from '../pages/ticket-scrath/ticket-scrath';
 import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
     PocketMoneyPage,
     SettingPage,
     TicketScrathPage,
-    TicketSlotPage
+    TicketSlotPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
     PocketMoneyPage,
     SettingPage,
     TicketScrathPage,
-    TicketSlotPage
+    TicketSlotPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
