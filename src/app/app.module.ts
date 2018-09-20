@@ -12,12 +12,9 @@ import { PocketMoneyPage } from '../pages/pocket-money/pocket-money';
 
 import { TicketScrathPage } from '../pages/ticket-scrath/ticket-scrath';
 import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
-<<<<<<< HEAD
 import { TabsPage } from '../pages/tabs/tabs';
-=======
 import { SettingDetailPage } from '../pages/setting-detail/setting-detail';
 import { SettingPage } from '../pages/setting/setting';
->>>>>>> sss
 
 @NgModule({
   declarations: [
