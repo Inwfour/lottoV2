@@ -9,10 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { AlarmPage } from '../pages/alarm/alarm';
 import { PocketMoneyPage } from '../pages/pocket-money/pocket-money';
-import { SettingPage } from '../pages/setting/setting';
+
 import { TicketScrathPage } from '../pages/ticket-scrath/ticket-scrath';
 import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
+<<<<<<< HEAD
 import { TabsPage } from '../pages/tabs/tabs';
+=======
+import { SettingDetailPage } from '../pages/setting-detail/setting-detail';
+import { SettingPage } from '../pages/setting/setting';
+>>>>>>> sss
 
 @NgModule({
   declarations: [
@@ -22,6 +27,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     AlarmPage,
     PocketMoneyPage,
     SettingPage,
+    SettingDetailPage,
     TicketScrathPage,
     TicketSlotPage,
     TabsPage
@@ -38,6 +44,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     AlarmPage,
     PocketMoneyPage,
     SettingPage,
+    SettingDetailPage,
     TicketScrathPage,
     TicketSlotPage,
     TabsPage

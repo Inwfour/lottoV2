@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage,NavController, NavParams } from 'ionic-angular';
+import { SettingDetailPage } from '../setting-detail/setting-detail';
 
 /**
  * Generated class for the SettingPage page.
@@ -7,19 +8,42 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
 @IonicPage()
 @Component({
   selector: 'page-setting',
   templateUrl: 'setting.html',
 })
+
 export class SettingPage {
+  items = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.items = [
+      {
+        'title': 'Help',        
+        'description': 'A powerful Javascript framework for building single page apps. Angular is open source, and maintained by Google.',
+        
+      },
+      {
+        'title': 'Provision',        
+        'description': 'The latest version of cascading stylesheets - the styling language of the web!',
+        
+      },
+      {
+        'title': 'Contact',        
+        'description': 'The official mascot of the Linux kernel!',
+       
+      },
+      {
+        'title': 'Currency',        
+        'description': 'The official mascot of the Linux kernel!',
+       
+      },
+    ]
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingPage');
+  openSettingDetaillPage(item) {
+    this.navCtrl.push(SettingDetailPage, { item: item });
   }
 
 }

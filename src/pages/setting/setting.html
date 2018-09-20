@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar text-center color="danger">
     <ion-title>setting</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,10 @@
 
 
 <ion-content padding>
-
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="openSettingDetaillPage(item)" icon-start>
+          {{ item.title }}
+        </button>
+      </ion-list>
+      
 </ion-content>
