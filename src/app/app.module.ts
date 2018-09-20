@@ -7,12 +7,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { AlarmPage } from '../pages/alarm/alarm';
+import { PocketMoneyPage } from '../pages/pocket-money/pocket-money';
+import { SettingPage } from '../pages/setting/setting';
+import { TicketScrathPage } from '../pages/ticket-scrath/ticket-scrath';
+import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    AlarmPage,
+    PocketMoneyPage,
+    SettingPage,
+    TicketScrathPage,
+    TicketSlotPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +32,12 @@ import { LoginPage } from '../pages/login/login';
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    AlarmPage,
+    PocketMoneyPage,
+    SettingPage,
+    TicketScrathPage,
+    TicketSlotPage
   ],
   providers: [
     StatusBar,
