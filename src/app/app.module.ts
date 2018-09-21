@@ -15,6 +15,8 @@ import { TicketSlotPage } from '../pages/ticket-slot/ticket-slot';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SettingDetailPage } from '../pages/setting-detail/setting-detail';
 import { SettingPage } from '../pages/setting/setting';
+import { ScrathGamePage } from '../pages/scrath-game/scrath-game';
+import { TicketPage } from '../pages/ticket/ticket';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,16 @@ import { SettingPage } from '../pages/setting/setting';
     SettingDetailPage,
     TicketScrathPage,
     TicketSlotPage,
-    TabsPage
+    TabsPage,
+    ScrathGamePage,
+    TicketPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages: true,
+    }
+    )],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -44,7 +50,9 @@ import { SettingPage } from '../pages/setting/setting';
     SettingDetailPage,
     TicketScrathPage,
     TicketSlotPage,
-    TabsPage
+    TabsPage,
+    ScrathGamePage,
+    TicketPage
   ],
   providers: [
     StatusBar,

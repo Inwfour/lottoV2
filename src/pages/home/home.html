@@ -12,11 +12,11 @@
                 <img width="100%" src="../../assets/imgs/top.png">
             </ion-col>
             <ion-col col-12 style="margin-top:5px">
-                <button class="img-bottom" ion-button>Buy Ticket</button>
-                <img width="100%" src="../../assets/imgs/g1.png">
+                <button (click)="nextTicket()" class="img-bottom" ion-button>Buy Ticket</button>
+                <img width="100%" src="../../assets/imgs/g1.png" (click)="nextGame()">
             </ion-col>
             <ion-col col-12 style="margin-top:5px">
-                <button class="img-bottom" ion-button>Buy Ticket</button>
+                <button (click)="nextTicket()" class="img-bottom" ion-button>Buy Ticket</button>
                 <img width="100%" src="../../assets/imgs/g2.png">
             </ion-col>
         </ion-row>

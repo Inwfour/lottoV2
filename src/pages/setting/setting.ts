@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage,NavController, NavParams } from 'ionic-angular';
 import { SettingDetailPage } from '../setting-detail/setting-detail';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the SettingPage page.
@@ -45,5 +46,7 @@ export class SettingPage {
   openSettingDetaillPage(item) {
     this.navCtrl.push(SettingDetailPage, { item: item });
   }
-
+home(){
+  this.navCtrl.push(HomePage);
+}
 }

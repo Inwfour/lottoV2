@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { ScrathGamePage } from '../scrath-game/scrath-game';
+import { TicketPage } from '../ticket/ticket';
 
 @Component({
   selector: 'page-home',
@@ -16,6 +18,12 @@ export class HomePage {
   }
   toggleMenu() {
     this.menuCtrl.toggle();
+  }
+  nextGame(){
+    this.navCtrl.push(ScrathGamePage);
+  }
+  nextTicket(){
+    this.navCtrl.push(TicketPage);
   }
 
 }
