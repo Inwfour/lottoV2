@@ -15,7 +15,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AlarmPage {
 
+  alarm1 = [];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.alarm1 = [
+      {
+        'Date': '22/08/18',        
+        'From': 'From John Wick',
+        'Type': 'Sell 20 Coin',
+        
+      },
+      {
+        'Date': '21/08/18',        
+        'From': 'From UserX',
+        'Type': 'Buy 10 Coin',
+      },
+      {
+        'Date': '20/08/18',        
+        'From': 'From UserX',
+        'Type': 'Buy 5 Ticket',
+      },
+      {
+        'Date': '19/08/18',        
+        'From': 'From Admin',
+        'Type': 'Scrath 200 Poker',
+      },
+    ]
   }
 
   ionViewDidLoad() {
