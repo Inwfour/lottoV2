@@ -21,7 +21,7 @@ export class PocketMoneyPage {
   };
   History1 = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public Alert:AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl:AlertController) {
     this.History1 = [
     {
       'Date': '22/08/18',        
@@ -54,7 +54,7 @@ export class PocketMoneyPage {
   }
   show(item){
     {
-      const alert = this.Alert.create({
+      const alert = this.alertCtrl.create({
         title: item.Date + "<br>",
         subTitle: item.Amount + "<br>" +item.Type,       
         buttons: ['OK']
@@ -62,6 +62,15 @@ export class PocketMoneyPage {
       alert.present();
     }
 
+  }
+  alertMoney(){
+    let alert = this.alertCtrl.create({
+      title: 'Add Line',
+      subTitle: '@lotto',
+      
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
 }

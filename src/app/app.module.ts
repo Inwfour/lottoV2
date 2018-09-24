@@ -17,6 +17,7 @@ import { SettingDetailPage } from '../pages/setting-detail/setting-detail';
 import { SettingPage } from '../pages/setting/setting';
 import { ScrathGamePage } from '../pages/scrath-game/scrath-game';
 import { TicketPage } from '../pages/ticket/ticket';
+import { FruityGamePage } from '../pages/fruity-game/fruity-game';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TicketPage } from '../pages/ticket/ticket';
     TicketSlotPage,
     TabsPage,
     ScrathGamePage,
-    TicketPage
+    TicketPage,
+    FruityGamePage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { TicketPage } from '../pages/ticket/ticket';
     TicketSlotPage,
     TabsPage,
     ScrathGamePage,
-    TicketPage
+    TicketPage,
+    FruityGamePage
   ],
   providers: [
     StatusBar,

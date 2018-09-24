@@ -3,6 +3,7 @@ import { NavController, MenuController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { ScrathGamePage } from '../scrath-game/scrath-game';
 import { TicketPage } from '../ticket/ticket';
+import { FruityGamePage } from '../fruity-game/fruity-game';
 
 @Component({
   selector: 'page-home',
@@ -24,6 +25,10 @@ export class HomePage {
   }
   nextTicket(){
     this.navCtrl.push(TicketPage);
+  }
+
+  nextFruity(){
+    this.navCtrl.push(FruityGamePage);
   }
 
 }

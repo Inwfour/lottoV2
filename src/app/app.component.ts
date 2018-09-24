@@ -31,6 +31,9 @@ export class MyApp {
   nextS(){
     this.nav.setRoot(SettingPage);
   }
+  nextL(){
+    this.nav.setRoot(LoginPage);
+  }
  
 }
 

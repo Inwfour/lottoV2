@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage,NavController, NavParams } from 'ionic-angular';
 import { SettingDetailPage } from '../setting-detail/setting-detail';
 import { HomePage } from '../home/home';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the SettingPage page.
@@ -47,6 +48,6 @@ export class SettingPage {
     this.navCtrl.push(SettingDetailPage, { item: item });
   }
 home(){
-  this.navCtrl.push(HomePage);
+  this.navCtrl.push(TabsPage);
 }
 }

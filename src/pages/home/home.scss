@@ -16,6 +16,21 @@ page-home {
         font-size: 40%;
         background-color: green;
     }
+    .img-bottom-left {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+        left: 2%;
+        bottom: 7%;
+    }
+    .img-bottom-left-label {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+        left: 12%;
+        bottom: 8%;
+        color:white;
+    }
     .scroll-content {
         overflow-y: hidden;
     }
